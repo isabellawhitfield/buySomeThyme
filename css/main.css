@@ -1,0 +1,81 @@
+.header-image{
+  width: 100%;
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header-text{
+  color:  #043353;
+  text-align: center;
+}
+.footer {
+  min-height: 200px;
+  color: #FAF8F088;
+  background-color: #043353;
+}
+.footer-message{
+  color: #FAF8F088;
+  text-decoration: none;
+}
+.footer-icon{
+  color: #FAF8F0;
+}
+
+.site-wrapper {
+  /* Poor-man's sticky footer */
+  min-height: calc(100vh - 301px)
+}
+
+.header-background{
+  background-color: #043353 !important;
+}
+
+.btn-primary {
+  background-color: #043353;
+  border-color: #043353;
+}
+
+.nav-link {
+  padding-left: 32px !important;
+  padding-right: 32px !important;
+  font-size: 1.5rem;
+}
+
+.container img {
+  width: 100%;
+}
+
+html {
+  font-size: 1.5rem;
+}
+
+@media (max-width: 576px) {
+  .container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+  }
+}
+
+.navbar-toggler {
+  font-size: 0.75rem;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link {
+  color: #FAF8F0;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+  color: #FAF8F088;
+}
+
+body {
+  background-color: #FAF8F0;
+  /* background-color: #EFEFEF; */
+}
