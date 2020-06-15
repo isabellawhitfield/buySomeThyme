@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<!-- template: category-blog.php -->
+
 <section class="page-wrap">
 <div class="container">
       This is the category blog template

@@ -8,12 +8,12 @@ function mytheme_customize_register( $wp_customize ) {
 
    // Background Colour
    $wp_customize->add_setting( 'buySomeThyme-background-colour' , array(
-       'default'   => '#FAF8F0',
+       'default'   => '#FBF5F2',
        'transport' => 'refresh',
    ) );
 
 
-   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'kiwanis-background-colour-control', array(
+   $wp_customize->add_control( new WP_Customize_Color_Control( $wp_customize, 'buySomeThyme-background-colour-control', array(
    	'label'      => __( 'Background Colour', 'buySomeThyme-theme' ),
     'description' => 'Change the background Colour',
    	'section'    => 'colors',
@@ -22,7 +22,7 @@ function mytheme_customize_register( $wp_customize ) {
 
    // Header and Footer background Colour
     $wp_customize->add_setting( 'buySomeThyme-header-footer-colour' , array(
-        'default'   => '#043353',
+        'default'   => '#718A66',
         'transport' => 'refresh',
     ) );
 
@@ -42,7 +42,7 @@ function mytheme_customize_register( $wp_customize ) {
    ));
 
    $wp_customize->add_setting( 'buySomeThyme-footer-section-message' , array(
-       'default'   => 'Copyright © Buy Some Thyme NZSP 2020',
+       'default'   => 'Copyright © 2020 – Design by Isabella Whitfield',
        'transport' => 'refresh',
    ) );
 
@@ -53,21 +53,21 @@ function mytheme_customize_register( $wp_customize ) {
    ) ) );
 
    // Site Title Text
-   $wp_customize->add_section( 'buySomeThyme-title-text' , array(
-       'title'      => __( 'Site Title Text', 'buySomeThyme-theme' ),
-       'priority'   => 30,
-   ));
+  //  $wp_customize->add_section( 'buySomeThyme-title-text' , array(
+  //      'title'      => __( 'Site Title Text', 'buySomeThyme-theme' ),
+  //      'priority'   => 30,
+  //  ));
 
-   $wp_customize->add_setting( 'buySomeThyme-title-text' , array(
-       'default'   => 'buySomeThyme',
-       'transport' => 'refresh',
-   ) );
+  //  $wp_customize->add_setting( 'buySomeThyme-title-text' , array(
+  //      'default'   => 'Buy Some Thyme',
+  //      'transport' => 'refresh',
+  //  ) );
 
-   $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'buySomeThyme-title-text-control', array(
-     'label'      => __( 'Site Title Text', 'buySomeThyme-theme' ),
-     'section'    => 'buySomeThyme-title-text',
-     'settings'   => 'buySomeThyme-title-text',
-   ) ) );
+  //  $wp_customize->add_control( new WP_Customize_Control( $wp_customize, 'buySomeThyme-title-text-control', array(
+  //    'label'      => __( 'Site Title Text', 'buySomeThyme-theme' ),
+  //    'section'    => 'buySomeThyme-title-text',
+  //    'settings'   => 'buySomeThyme-title-text',
+  //  ) ) );
    }
 
  add_action( 'customize_register', 'mytheme_customize_register' );
@@ -78,14 +78,12 @@ function mytheme_customize_register( $wp_customize ) {
  {
    ?>
     <style type="text/css">
-    body {
-            background-color: <?php echo get_theme_mod('buySomeThyme-background-colour','#FAF8F0'); ?>!important;
-         }
-   .footer, .header-background{
-             background-color: <?php echo get_theme_mod('buySomeThyme-header-footer-colour', '#043353'); ?>!important ;
-           }
-
-
+      body {
+        background-color: <?php echo get_theme_mod('buySomeThyme-background-colour','#FBF5F2'); ?>!important;
+      }
+      .footer, .header-background{
+        background-color: <?php echo get_theme_mod('buySomeThyme-header-footer-colour', '#718A66'); ?>!important ;
+      }
   </style>
 <?php
 }

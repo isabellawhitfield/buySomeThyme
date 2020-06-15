@@ -11,7 +11,8 @@
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="<?php print get_home_url(); ?>">
-            <img class="site-logo" src="<?php bloginfo('stylesheet_directory') ?>/images/kiwanis-logo.png" alt="Kiwanis logo">
+            <!-- <img class="site-logo" src="<?php bloginfo('stylesheet_directory') ?>/images/buySomeThyme-logo.png" alt="Buy Some Thyme logo"> -->
+            <?php bloginfo('name') ?>
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -29,10 +30,24 @@
             )
           );
           ?>
+
+          <div class="header__cart">
+            <?php if ( in_array( 'woocommerce/woocommerce.php', apply_filters( 'active_plugins', get_option( 'active_plugins' ) ) ) ) {
+            $count = WC()->cart->cart_contents_count;
+            ?>
+              <a class="header__cart__link" href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>">
+                <span class="dashicons dashicons-cart"></span>&nbsp;
+                <span class="header__cart__count"><?php echo esc_html( $count ); ?></span>
+              </a>
+            <?php 
+            } 
+            ?>
+          </div>
+
         </div>
       </nav>
     </header>
 
-    <div class="container py-3 site-wrapper">
+    <div class="container pb-3 site-wrapper">
       <main>
 

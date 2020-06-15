@@ -4,6 +4,8 @@ Template Name: Contact
 */
 ?>
 
+<!-- template: template-contact.php -->
+
 <?php get_header(); ?>
 
 <section class="page-wrap">

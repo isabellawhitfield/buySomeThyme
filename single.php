@@ -1,5 +1,7 @@
 <?php get_header(); ?>
 
+<!-- template: single.php -->
+
 <main>
   <div class="container">
     <div class="card">

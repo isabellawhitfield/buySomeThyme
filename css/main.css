@@ -1,3 +1,9 @@
+/* Colors
+  Primary, green: #718A66
+  Secondary, orange: #FF9558
+  Secondary, orange__dark: rgb(216, 116, 57)
+ */
+
 .header-image{
   width: 100%;
   height: 60vh;
@@ -7,35 +13,52 @@
   justify-content: center;
   align-items: center;
 }
-.header-text{
-  color:  #043353;
+.header-text, h1, h2, h3, h4, h5, h6 {
+  color:  #FF9558;
   text-align: center;
 }
 .footer {
-  min-height: 200px;
-  color: #FAF8F088;
-  background-color: #043353;
+  color: white;
+  /* min-height: 200px; */
+  /* color: #FFFFFF88; */
+  background-color: #718A66;
 }
 .footer-message{
-  color: #FAF8F088;
+  color: #FFFFFF88;
   text-decoration: none;
+  margin: 0;
 }
 .footer-icon{
-  color: #FAF8F0;
+  color: white;
 }
 
 .site-wrapper {
+  background-color: white;
+  padding: 0;
   /* Poor-man's sticky footer */
   min-height: calc(100vh - 301px)
 }
 
 .header-background{
-  background-color: #043353 !important;
+  background-color: #718A66 !important;
 }
 
-.btn-primary {
-  background-color: #043353;
-  border-color: #043353;
+.btn-primary, .wp-block-button__link {
+  background-color: #FF9558;
+  border-color: #FF9558;
+  border-radius: .25rem;
+}
+.btn-primary:hover, .wp-block-button__link:hover {
+  background-color: rgb(216, 116, 57);
+  border-color: rgb(216, 116, 57);
+}
+
+a {
+  color: #FF9558;
+}
+
+a:hover{ 
+  color: rgb(216, 116, 57);
 }
 
 .nav-link {
@@ -49,7 +72,7 @@
 }
 
 html {
-  font-size: 1.5rem;
+  /* font-size: 1.5rem; */
 }
 
 @media (max-width: 576px) {
@@ -68,14 +91,71 @@ html {
 }
 
 .navbar-dark .navbar-nav .active>.nav-link {
-  color: #FAF8F0;
+  color: white;
 }
 
 .navbar-dark .navbar-nav .nav-link {
-  color: #FAF8F088;
+  color: #FFFFFF88;
 }
 
 body {
-  background-color: #FAF8F0;
-  /* background-color: #EFEFEF; */
+  background-color: #FBF5F2;
 }
+
+.how-it-works-container {
+  max-width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 576px) {
+  .how-it-works-container {
+    max-width: 100%;
+  }
+}
+
+/* .how-it-works__heading { } */
+
+.how-it-works__steps {
+  color: #FF9558;
+  /* font-size: 32px; */
+  /* text-align: center; */
+}
+
+.our-values {
+  background-color: #718A66;
+  color: white;
+  padding: 16px;
+  margin-bottom: 16px;
+}
+.our-values * {
+  color: white;
+}
+
+.shop-now-button {
+  display: block !important;
+  text-align: center;
+}
+
+.header__cart__link {
+  color: white;
+  text-decoration: none;
+}
+.header__cart__link * {
+  text-decoration: none;
+}
+
+.header__cart__link:hover {
+  color: #FFFFFF88;
+}
+
+.main-sidebar {
+  border-left: 1px solid #EEEEEE;
+  padding-right: 30px;
+  padding-top: 15px;
+}
+
+.main-sidebar__widget {
+  border-bottom: 1px solid #EEEEEE;
+}
+
