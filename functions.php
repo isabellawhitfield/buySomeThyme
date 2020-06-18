@@ -72,23 +72,23 @@ add_action('widgets_init', 'my_sidebars');
 
 
 // custom post type
-// function newsletter_post_type(){
-//   $args = array(
-//     'labels' => array(
-//         'name' => 'Newsletters',
-//         'singular_name' => 'Newsletter',
-//     ),
-//   'hierarchical' => false, //booleans value toggles between pages & posts without labels
-//   'menu_icon' => 'dashicons-format-aside',
-//   'public' => true,
-//   'has_archive' => true,
-//   // 'supports' => array('title', 'editor', 'thumbnail','custom-fields'),// if one of the argument is  not mentioned,
-//   //if makes difference in features
+function about_post_type(){
+  $args = array(
+    'labels' => array(
+        'name' => 'About Us',
+        'singular_name' => 'About',
+    ),
+  'hierarchical' => false, //booleans value toggles between pages & posts without labels
+  'menu_icon' => 'dashicons-format-aside',
+  'public' => true,
+  'has_archive' => true,
+  // 'supports' => array('title', 'editor', 'thumbnail','custom-fields'),// if one of the argument is  not mentioned,
+  //if makes difference in features
 
-// );
-//   register_post_type('newsletters',$args);
-// }
-// add_action('init','newsletter_post_type');
+);
+  register_post_type('about',$args);
+}
+add_action('init','about_post_type');
 
 
 // Taxanomy
@@ -120,6 +120,11 @@ function register_navwalker(){
 }
 add_action( 'after_setup_theme', 'register_navwalker' );
 
+// Load dashicons for not-logged-in users (?)
+function ww_load_dashicons(){
+  wp_enqueue_style('dashicons');
+}
+add_action('wp_enqueue_scripts', 'ww_load_dashicons');
 
 // register_default_headers( array(
 //   'defaultImage' => array(

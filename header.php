@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title><?php bloginfo('name') ?></title>
     <?php wp_head(); ?><!-- notice the wordpress admin bar on top-->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
   </head>
   <body>
     <header class="header-background">
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container">
           <a class="navbar-brand" href="<?php print get_home_url(); ?>">
-            <!-- <img class="site-logo" src="<?php bloginfo('stylesheet_directory') ?>/images/buySomeThyme-logo.png" alt="Buy Some Thyme logo"> -->
-            <?php bloginfo('name') ?>
+            <img class="site-logo" src="<?php bloginfo('stylesheet_directory') ?>/images/buysomethyme-logo.png" alt="Buy Some Thyme logo">
+            <!-- <?php bloginfo('name') ?> -->
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>

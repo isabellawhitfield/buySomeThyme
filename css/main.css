@@ -3,6 +3,12 @@
   Secondary, orange: #FF9558
   Secondary, orange__dark: rgb(216, 116, 57)
  */
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+ .site-logo {
+   max-width: 300px;
+ }
 
 .header-image{
   width: 100%;
