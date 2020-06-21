@@ -10,6 +10,7 @@
           <li><a class="d-flex align-items-center footer-icon" href="https://www.facebook.com/BuySomeThymeGroceries/"><span class="dashicons dashicons-facebook"></span>&nbsp;Facebook</a></li>
           <li><a class="d-flex align-items-center footer-icon" href="https://twitter.com/BuySomeThymeGroceries"><span class="dashicons dashicons-twitter"></span>&nbsp;Twitter</a></li>
           <li><a class="d-flex align-items-center footer-icon" href="https://www.instagram.com/BuySomeThymeGroceries"><span class="dashicons dashicons-instagram"></span>&nbsp;Instagram</a></li>
+          <li><a class="d-flex align-items-center footer-icon" href="https://bella.winsauce.com"><span class="dashicons dashicons-portfolio"></span>&nbsp;View my Portfolio</a></li>
         </ul>
       </div>
       <div class="col-md-9">
@@ -18,6 +19,7 @@
           <li><a href="tel:+64212200223"></a>021 220 0223</li>
           <li><a href="mailto:buysomethyme@gmail.com">buysomethyme@gmail.com</a></li>
         </ul>
+
 
       </div>
     </div>

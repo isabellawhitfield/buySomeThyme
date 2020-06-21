@@ -9,8 +9,10 @@ if (have_posts()) :
         <h2 class="card-title h3 mb-4"> <?php the_title(); ?>   </h2>
         <div class="card-text">
           <?php
-          the_content();
+          the_excerpt();
           ?>
+
+          <a class="btn btn-primary" href="<?php the_permalink(); ?>">Read more</a>
         </div>
       </div>
 
